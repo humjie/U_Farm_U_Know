@@ -8,8 +8,8 @@
 ## TO PLAY THIS GAME:
 
 [Download the zipfile in this Google Drive](https://drive.google.com/drive/folders/15-57oU7CFtr9uGSUhw8FgDVpmbd7QcTQ?usp=sharing)  
-1. Press the link above and download the zip file from Google Drive.  
-2. Unzip it and open the `U_Farm_U_Know.exe` application.  
+1. Press the link above and download the zip file from Google Drive.
+2. Unzip it and open the `U_Farm_U_Know.exe` application.
 3. Enjoy your journey!
 
 
