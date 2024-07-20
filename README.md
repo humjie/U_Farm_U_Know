@@ -20,6 +20,9 @@
 4. Open the shop, choose the crops and plant them on the empty lands.
 5. Harvest the mature crops by pressing on the planted land again.
 6. Continue planting and complete the mystery events. *Mystery events will pop out when you accumulate certain asset
-
 7. Press End button when you reach $6000.
 8. Find out your personality!
+
+
+## For anyone who is interested in the creating process
+- Feel free to read files in [Here](https://drive.google.com/drive/folders/1IcCkd5jzBX3eVTaQOlz2-dmAHiQRtQh3?usp=sharing)  
