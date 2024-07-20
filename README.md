@@ -1,28 +1,27 @@
 # U_Farm_U_Know
 
-- This is a farming game that can show your personality.  
-- In this game, you need to farm, discover mystery events, and accumulate your assets to $6000.  
-- After that, we will use Self-Directed Research to find out your personality and show other interesting suggestions related to your personality type.
+- This farming game has the ability to figure out your personality.  
+- You have to farm in this game, discover mysterious happenings, and build up your assets to $6000.  
+- Lastly, we will use Self-Directed Research to find out your personality type and present further interesting recommendations.
 
 
 ## TO PLAY THIS GAME:
 
 [Download the zipfile in this Google Drive](https://drive.google.com/drive/folders/15-57oU7CFtr9uGSUhw8FgDVpmbd7QcTQ?usp=sharing)  
-1. Press the link above and download the zip file from Google Drive.
-2. Unzip it and open the `U_Farm_U_Know.exe` application.
-3. Enjoy your journey!
+1. Click the link above and download the zip file from Google Drive.
+2. Extract the file and launch the `U_Farm_U_Know.exe` program.
+3. Savor the ride!
 
 
 ## Game Rules
 
-1. Press Start.
-2. Read the description and press End.
-4. Open the shop, choose the crops and plant them on the empty lands.
-5. Harvest the mature crops by pressing on the planted land again.
-6. Continue planting and complete the mystery events. *Mystery events will pop out when you accumulate certain asset
-7. Press End button when you reach $6000.
-8. Find out your personality!
+1. Click the Start button.
+2. After reading the description, click End.
+4. Open the shop, select the crops, and sow them on the vacant land.
+5. Press on the planted space for one more time to harvest the mature crops.
+6. Keep planting and finish the mystery events. *Mystery events will appear after you reach a specific asset accumulation.
+7. When you get to $6000, click the End button.
+8. Discover who you are!
 
-
-## For anyone who is interested in the creating process
+## For those who are curious about how inspiration is generated
 - Feel free to read files in [Here](https://drive.google.com/drive/folders/1IcCkd5jzBX3eVTaQOlz2-dmAHiQRtQh3?usp=sharing)  
