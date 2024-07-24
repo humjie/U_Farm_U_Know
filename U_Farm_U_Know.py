@@ -34,7 +34,7 @@ window.bind("<Escape>", exit_fullscreen)
 ### background_music
 def play_music():
     pygame.mixer.init()
-    pygame.mixer.music.set_volume(0.05)
+    pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.load(os.path.join(os.getcwd(), "resources/background_music.mp3"))
     pygame.mixer.music.play()
 play_music()
@@ -177,7 +177,7 @@ class Setting_menu():
         self.master = master
         self.relx = relx
         self.rely = rely
-        self.current_volume = 0.05
+        self.current_volume = 0.1
         self.can_open_volume = 1
 
         self.setting_button_menu = tk.Menu(self.button)
