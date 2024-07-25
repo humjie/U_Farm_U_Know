@@ -34,7 +34,7 @@ window.bind("<Escape>", exit_fullscreen)
 ### background_music
 def play_music():
     pygame.mixer.init()
-    pygame.mixer.music.set_volume(0.1)
+    pygame.mixer.music.set_volume(0.2)
     pygame.mixer.music.load(os.path.join(os.getcwd(), "resources/background_music.mp3"))
     pygame.mixer.music.play()
 play_music()
@@ -177,7 +177,7 @@ class Setting_menu():
         self.master = master
         self.relx = relx
         self.rely = rely
-        self.current_volume = 0.1
+        self.current_volume = 0.2
         self.can_open_volume = 1
 
         self.setting_button_menu = tk.Menu(self.button)
@@ -186,6 +186,8 @@ class Setting_menu():
         self.setting_button_menu.add_command(label="Language", command=self.language, font=("Comic Sans MS", 10))
         self.setting_button_menu.add_command(label="Volume", command=self.volume, font=("Comic Sans MS", 10))
         self.setting_button_menu.add_command(label="Quit", command=self.quit, font=("Comic Sans MS", 10))
+
+
 
     def language(self):
         pass
@@ -429,8 +431,8 @@ class Shop_button():
 
 
 class Generate_stone_tree():
-    def __init__(self, avoid_zone):
-        self.avoid_zone = avoid_zone
+    def __init__(self):
+        self.avoid_zone = (screen_width/2 - 175, screen_width/2 + 175, screen_height/2 - 175, screen_height/2 + 175)
         self.avoid_overlap = []
         self.tree_frames = []
         self.stone_frames = []
@@ -526,15 +528,14 @@ class Generate_stone_tree():
             Money.start_warning()
 
     def check_avoid_zone(self, x, y, width, height):
-        for a in range(a):
-            ax1, ax2, ay1, ay2 = self.avoid_zone[a]
-            if x + width >= ax1 and x <= ax2:
-                if y + height >= ay1 and y <= ay2:
+        ax1, ax2, ay1, ay2 = self.avoid_zone
+        if x + width >= ax1 and x <= ax2:
+            if y + height >= ay1 and y <= ay2:
+                return False
+        for i in self.avoid_overlap:
+            if x + width >= i[0] and x <= i[1]:
+                if y + height >= i[2] and y <= i[3]:
                     return False
-            for i in self.avoid_overlap:
-                if x + width >= i[0] and x <= i[1]:
-                    if y + height >= i[2] and y <= i[3]:
-                        return False
         return True
 
     def get_valid_position(self, width, height):
@@ -1273,16 +1274,13 @@ class Page_3():
 
 reference = "Reference:\n\nhttps://self-directed-search.com/riasec-theory/\nhttps://www.acer.org/files/SDS_Sample_Report.pdf\nhttps://boardgamedesignlab.com/wp-content/uploads/2020/11/Playtest-Feedback-Form.pdf\nhttps://www.youtube.com/watch?v=zPyg4N7bcHM\n"
 tools = "Tools:\n\nPython, Tkinter, ChatGPT, Paint, FlipaClip, Canvas, Runway, etc.\n"
-avoid_zone = [(screen_width/2 - 175, screen_width/2 + 175, screen_height/2 - 175, screen_height/2 + 175), (screen_width*0.9, screen_height*0.4, 150, 150)]
-
 
 
 if __name__ == "__main__":
     create_arableland()
     Shop_button()
     Money = Money()
-    generate_stone_tree = Generate_stone_tree(avoid_zone)
+    generate_stone_tree = Generate_stone_tree()
     rsieac_points = RSIEAC_points()
 
     window.mainloop()
-
